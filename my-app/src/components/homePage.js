@@ -145,11 +145,11 @@ class Homepage extends Component
 			        <div className="modal-body">
 			          <form role="form">
 			            <div className="form-group">
-			              <label for="psw"><span className="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+			              <label ><span className="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
 			              <input type="number" className="form-control" id="psw" placeholder="How many?"/>
 			            </div>
 			            <div className="form-group">
-			              <label for="usrname"><span className="glyphicon glyphicon-user"></span> Send To</label>
+			              <label ><span className="glyphicon glyphicon-user"></span> Send To</label>
 			              <input type="text" className="form-control" id="usrname" placeholder="Enter email"/>
 			            </div>
 			              <button type="submit" className="btn btn-block">Pay 
