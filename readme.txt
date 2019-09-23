@@ -6,6 +6,9 @@ create-react-app my-app
 npm start
 npm i react-router-dom
 
+npm install axios --save
+https://alligator.io/react/axios-react/
+
 ########################
 How to upload on server
 ########################
