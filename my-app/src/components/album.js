@@ -3,6 +3,7 @@ import React from 'react';
 import axios from 'axios';
 
 export default class Album extends React.Component {
+	
   state = {
     images: []
   }
@@ -17,12 +18,14 @@ export default class Album extends React.Component {
 
   render() {
     return (
-    	<div className="container">
-    	<h3 className="text-center">ALBUM</h3>
-	      <ul>
-	        { this.state.images.map(image => <li>{image.title} <img src={image.thumbnailUrl} /></li>)}
-	      </ul>
-	    </div>
+      <React.Fragment>  
+      	<div className="container">
+        	<h3 className="text-center">ALBUM</h3>
+    	      <ul>
+    	        { this.state.images.map(image => <li>{image.title} <img src={image.thumbnailUrl} /></li>)}
+    	      </ul>
+  	    </div>
+      </React.Fragment>  
     )
   }
 }

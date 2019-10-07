@@ -12,6 +12,7 @@ import Footer from './components/footer';
 import PersonList from './components/personList/person-list';
 import PersonCreate from './components/personList/person-create';
 import Album from './components/album';
+import Register from './components/auth/register';
 
 class App extends Component {
   render() {
@@ -25,6 +26,8 @@ class App extends Component {
           <Route exact path="/person" component={PersonList} />
           <Route exact path="/person/create" component={PersonCreate} />
           <Route exact path="/album" component={Album} />
+          <Route exact path="/register" component={Register} />
+
 
           <Footer/>
         </div>

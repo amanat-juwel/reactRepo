@@ -21,7 +21,7 @@ class Contact extends Component
 	}
 	render(){
 		return(
-			<contact>
+			<React.Fragment>  
 				<div id="contact" className="container">
 				  <h3 className="text-center">{ this.state.pagename }</h3>
 				  <p className="text-center"><em>We love our fans!</em></p>
@@ -53,7 +53,7 @@ class Contact extends Component
 				    </div>
 				  </div>
 				</div>
-			</contact>
+			</React.Fragment> 
 		)
 	}
 }

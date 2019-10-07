@@ -1,7 +1,12 @@
 import React , {Component} from 'react';
 import{
-  Link
+  NavLink
 } from 'react-router-dom';
+
+const style = {
+	color: 'red',
+	fontWeight: 'bold'
+}
 
 class Header extends Component
 {
@@ -20,10 +25,11 @@ class Header extends Component
 				    </div>
 				    <div className="collapse navbar-collapse" id="myNavbar">
 				      <ul className="nav navbar-nav navbar-right">
-				        <li><Link to="/">HOME</Link></li>
+				        <li><NavLink activeStyle={style} to="/">HOME</NavLink></li>
 				        <li><a href="#band">BAND</a></li>
 				        <li><a href="#tour">TOUR</a></li>
-				        <li><Link to="/contact">CONTACT</Link></li>
+				        <li><NavLink activeStyle={style}  to="/contact">CONTACT</NavLink></li>
+				        <li><NavLink activeStyle={style}  to="/register">REGISTER</NavLink></li>
 				      </ul>
 				    </div>
 				  </div>
